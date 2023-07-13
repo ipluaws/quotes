@@ -7,6 +7,10 @@ on:
         description: 'Whether to run the subsequent workflows after triggering this one manully.'
         required: false
         default: false
+      branch:
+        description: 'Branch name'
+        required: true
+        type: string
   repository_dispatch:
     types: [manual-parallel]
 
